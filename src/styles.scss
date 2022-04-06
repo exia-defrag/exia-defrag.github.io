@@ -4,13 +4,16 @@
   src: local("CrisisCore"), url(./assets/fonts/crisis-core.ttf) format("truetype");
 }
 
-html * {
+.txt-ff7cc {
   font-size: 1.1em;
   font-family: "CrisisCore";
+  letter-spacing: 2px;
 }
-
-.background-div{
-  background-color: black;
+.txt-cyan{
+  color: cyan;
+}
+.master-body {
+  background-color: #222222;
 }
 
 /* Importing Bootstrap SCSS file. */
