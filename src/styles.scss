@@ -9,12 +9,20 @@
   font-family: "CrisisCore";
   letter-spacing: 2px;
 }
+
 .txt-cyan{
   color: cyan;
 }
+
+.twitch-color{
+  background-color: #6441a5;
+}
+
 .master-body {
   background-color: #222222;
 }
+
+
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

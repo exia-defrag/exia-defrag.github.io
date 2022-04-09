@@ -3,26 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ButtonComponent } from './components/button/button.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './components/home/home.component';
 import { HomeHeroComponent } from './components/home-hero/home-hero.component';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+import { DevProjectsComponent } from './components/dev-projects/dev-projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    ButtonComponent,
     HomeComponent,
-    HomeHeroComponent
+    HomeHeroComponent,
+    DevProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxTypedJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
