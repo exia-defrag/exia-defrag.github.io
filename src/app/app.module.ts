@@ -3,26 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HomeComponent } from './components/home/home.component';
-import { HomeHeroComponent } from './components/home-hero/home-hero.component';
-import { NgxTypedJsModule } from 'ngx-typed-js';
-import { DevProjectsComponent } from './components/dev-projects/dev-projects.component';
+import { GeneralNavbarComponent } from './components/navbars/general-navbar/general-navbar.component';
+import { LandingPageComponent } from './pages/home/landing-page/landing-page.component';
+import { GithubProfileWidgetComponent } from './components/widgets/github-profile-widget/github-profile-widget.component';
+import { ScheduleComponent } from './components/widgets/schedule/schedule.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    HomeHeroComponent,
-    DevProjectsComponent
+    GeneralNavbarComponent,
+    LandingPageComponent,
+    GithubProfileWidgetComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    FontAwesomeModule,
-    NgxTypedJsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

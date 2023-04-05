@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "exia-defrag-github-io:build:production"
+              "browserTarget": "exia-defrag.github.io:build:production"
             },
             "development": {
-              "browserTarget": "exia-defrag-github-io:build:development"
+              "browserTarget": "exia-defrag.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "exia-defrag-github-io:build"
+            "browserTarget": "exia-defrag.github.io:build"
           }
         },
         "test": {
@@ -101,11 +101,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "exia-defrag-github-io"
+  "defaultProject": "exia-defrag.github.io"
 }
