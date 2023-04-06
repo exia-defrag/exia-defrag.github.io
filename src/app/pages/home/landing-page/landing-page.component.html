@@ -16,9 +16,8 @@
       <div class="w-full max-w-xl xl:px-8 xl:w-5/12">
         <div class="mx-auto container">
           <div class="mockup-code">
-            <pre data-prefix="$" class="text-success mb-2"><code>Which Exia are you here for?</code></pre>
-            <pre data-prefix=">" class="text-primary mb-1"><code><button class="text-primary btn btn-outline btn-sm">The Coder</button></code></pre>
-            <pre data-prefix=">" class="text-secondary"><code><button class="btn btn-outline btn-secondary btn-sm">Streamer</button></code></pre>
+            <pre data-prefix="$" class="text-success mb-2"><code>Featured</code></pre>
+            <pre *ngFor="let item of featuredData" [attr.data-prefix]="item.prefix" class="text-primary mb-1 hover:bg-primary hover:text-primary-content"><a [href]="item.link ? item.link : null"><code>{{ item.txt }}</code></a></pre>
           </div>
         </div>
       </div>

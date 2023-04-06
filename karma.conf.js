@@ -16,7 +16,7 @@ module.exports = function (config) {
       jasmine: {
         // you can add configuration options for Jasmine here
         // the possible options are listed at https://jasmine.github.io/api/edge/Configuration.html
-        // for example, you can disable the random execution with `random: false`
+        // for example, you can disable the random execution with `random: false`d
         // or set a specific seed with `seed: 4321`
       },
       clearContext: false // leave Jasmine Spec Runner output visible in browser
@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/exia-defrag.github.io'),
+      dir: require('path').join(__dirname, './coverage/exia-defrag-github-io'),
       subdir: '.',
       reporters: [
         { type: 'html' },

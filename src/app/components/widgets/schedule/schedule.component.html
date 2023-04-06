@@ -1,5 +1,5 @@
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-  <div class="text-4xl font-bold text-primary mb-5">Schedule</div>
+  <div class="text-4xl font-bold text-primary mb-5">Schedule (on Break, will apply sometime end of May 2023)</div>
   <div class="mb-10 border-t border-b divide-y">
     <div class="grid py-8 sm:grid-cols-4" *ngFor="let schedule of scheduleData">
       <div class="mb-4 sm:mb-0">
@@ -20,7 +20,14 @@
           {{schedule.description}}
         </p>
         <div class="btn-group" *ngIf="schedule.scheduleLinks">
-          <button class="btn {{link.btnColor}}" routerLink="{{link.btnLink}}" *ngFor="let link of schedule.scheduleLinks">{{link.btnTxt}}</button>
+          <ng-container *ngFor="let link of schedule.scheduleLinks">
+            <ng-container *ngIf="link.isLocalLink; else elseBlock">
+              <a class="btn {{link.btnColor}}" routerLink="{{link.btnLink}}" >{{link.btnTxt}}</a>
+            </ng-container>
+            <ng-template #elseBlock>
+              <a class="btn {{link.btnColor}}" href="{{link.btnLink}}" >{{link.btnTxt}}</a>
+            </ng-template>
+          </ng-container>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ISchedule, ScheduleData } from 'src/app/data/schedule';
+import { ISchedule } from 'src/app/data/schedule';
+import { ScheduleService } from 'src/app/services/repositories/schedule/schedule.service';
 
 @Component({
   selector: 'app-schedule',
@@ -7,11 +8,14 @@ import { ISchedule, ScheduleData } from 'src/app/data/schedule';
   styleUrls: ['./schedule.component.scss']
 })
 export class ScheduleComponent implements OnInit {
-  scheduleData: Array<ISchedule> = ScheduleData
+  scheduleData: Array<ISchedule> = []
 
-  constructor() { }
+  constructor(private scheduleService: ScheduleService) { }
 
   ngOnInit(): void {
+    this.scheduleService.getSchedule().subscribe((schedule) => {
+      this.scheduleData = schedule
+    })
   }
 
 }

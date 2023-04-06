@@ -7,6 +7,7 @@ import { GeneralNavbarComponent } from './components/navbars/general-navbar/gene
 import { LandingPageComponent } from './pages/home/landing-page/landing-page.component';
 import { GithubProfileWidgetComponent } from './components/widgets/github-profile-widget/github-profile-widget.component';
 import { ScheduleComponent } from './components/widgets/schedule/schedule.component';
+import { PokemonInclementEmeraldComponent } from './pages/nuzlocke/pokemon-inclement-emerald/pokemon-inclement-emerald.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ScheduleComponent } from './components/widgets/schedule/schedule.compon
     GeneralNavbarComponent,
     LandingPageComponent,
     GithubProfileWidgetComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    PokemonInclementEmeraldComponent
   ],
   imports: [
     BrowserModule,
