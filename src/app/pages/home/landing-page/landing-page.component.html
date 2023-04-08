@@ -16,8 +16,10 @@
       <div class="w-full max-w-xl xl:px-8 xl:w-5/12">
         <div class="mx-auto container">
           <div class="mockup-code">
-            <pre data-prefix="$" class="text-success mb-2"><code>Featured</code></pre>
-            <pre *ngFor="let item of featuredData" [attr.data-prefix]="item.prefix" class="text-primary mb-1 hover:bg-primary hover:text-primary-content"><a [href]="item.link ? item.link : null"><code>{{ item.txt }}</code></a></pre>
+            <!-- <pre data-prefix="$" class="text-success mb-2"><code>Featured</code></pre> -->
+            <!-- <pre *ngFor="let item of featuredData" [attr.data-prefix]="item.prefix" class="text-primary mb-1 hover:bg-primary hover:text-primary-content"><a [href]="item.link ? item.link : null"><code>{{ item.txt }}</code></a></pre> -->
+            <pre data-prefix="$" class="text-success mb-2"><code>Fragments Of Exia</code></pre>
+            <pre *ngFor="let item of fragmentsOfExia" data-prefix=">" class="text-primary mb-1 hover:bg-primary hover:text-primary-content"><a [href]="item.link ? item.link : null"><code>{{ item.title }}</code></a> <div class="badge badge-secondary badge-outline" *ngIf="item.badge">{{ item.badge }}</div></pre>
           </div>
         </div>
       </div>
@@ -26,3 +28,5 @@
 </div>
 
 <app-schedule></app-schedule>
+
+<!-- <app-games-played></app-games-played> -->

@@ -8,6 +8,7 @@ import { LandingPageComponent } from './pages/home/landing-page/landing-page.com
 import { GithubProfileWidgetComponent } from './components/widgets/github-profile-widget/github-profile-widget.component';
 import { ScheduleComponent } from './components/widgets/schedule/schedule.component';
 import { PokemonInclementEmeraldComponent } from './pages/nuzlocke/pokemon-inclement-emerald/pokemon-inclement-emerald.component';
+import { GamesPlayedComponent } from './components/games-played/games-played.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PokemonInclementEmeraldComponent } from './pages/nuzlocke/pokemon-incle
     LandingPageComponent,
     GithubProfileWidgetComponent,
     ScheduleComponent,
-    PokemonInclementEmeraldComponent
+    PokemonInclementEmeraldComponent,
+    GamesPlayedComponent
   ],
   imports: [
     BrowserModule,

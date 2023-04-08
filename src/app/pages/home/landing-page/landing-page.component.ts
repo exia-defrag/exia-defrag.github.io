@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IFeaturedPanel } from 'src/app/data/featuredPanel';
-import { FeaturedPanelService } from 'src/app/services/repositories/featuredPanel/featured-panel.service';
+import { IExiaFragement } from 'src/app/data/fragementsOfExia';
+import { ExiaService } from 'src/app/services/repositories/exia/exia.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -8,13 +8,13 @@ import { FeaturedPanelService } from 'src/app/services/repositories/featuredPane
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-  featuredData: Array<IFeaturedPanel> = []
+  fragmentsOfExia: Array<IExiaFragement> = []
 
-  constructor(private featuredPanelService: FeaturedPanelService) { }
+  constructor(private exiaService: ExiaService) { }
 
   ngOnInit(): void {
-    this.featuredPanelService.get().subscribe((featuredData) => {
-      this.featuredData = featuredData
+    this.exiaService.getFragments().subscribe((fragementsOfExia) => {
+      this.fragmentsOfExia = fragementsOfExia
     })
   }
 
