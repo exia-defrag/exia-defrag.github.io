@@ -1,16 +1,17 @@
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-  <div class="text-4xl font-bold text-primary mb-5">Schedule (on Break, will apply sometime end of May 2023)</div>
+  <div class="text-4xl font-bold text-secondary mb-3">Schedule</div>
+  <div class="text-xl font-bold text-primary mb-5">(on Break, will apply sometime end of May 2023)</div>
   <div class="mb-10 border-t border-b divide-y">
     <div class="grid py-8 sm:grid-cols-4" *ngFor="let schedule of scheduleData">
       <div class="mb-4 sm:mb-0">
         <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
-          <a href="/" class="transition-colors duration-200 text-primary hover:text-primary-focus" aria-label="Category">{{schedule.day}}</a>
+          <a class="transition-colors duration-200 text-primary hover:text-primary-focus" aria-label="Category">{{schedule.day}}</a>
           <p class="text-secondary">{{schedule.time}}</p>
         </div>
       </div>
       <div class="sm:col-span-3 lg:col-span-2">
         <div class="mb-3">
-          <a href="/" aria-label="Article" class="inline-block text-primary transition-colors duration-200 hover:text-primary-focus">
+          <a aria-label="Article" class="inline-block text-primary transition-colors duration-200 hover:text-primary-focus">
             <p class="text-xl font-extrabold leading-none sm:text-xl xl:text-2xl">
               {{schedule.title}}
             </p>
