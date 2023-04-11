@@ -9,6 +9,7 @@ import { GithubProfileWidgetComponent } from './components/widgets/github-profil
 import { ScheduleComponent } from './components/widgets/schedule/schedule.component';
 import { PokemonInclementEmeraldComponent } from './pages/nuzlocke/pokemon-inclement-emerald/pokemon-inclement-emerald.component';
 import { GamesPlayedComponent } from './components/games-played/games-played.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GamesPlayedComponent } from './components/games-played/games-played.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
